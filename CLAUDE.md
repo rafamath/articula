@@ -56,6 +56,18 @@ PDF report for their doctor. Rafael (product owner) is the first user and uses i
 - Don't polish the body map (M2) or the report (M4) before their milestones.
 - Before accepting any external PR, raise the AGPL / App Store / CLA question.
 
+## Tooling and GitHub
+
+- Install Expo packages with `npx expo install`, never plain `npm install`.
+- Before any GitHub write, check that `gh api user --jq .login` returns `rafamath`.
+- Commits use the repo-local GitHub noreply identity (`git config user.email`), never a personal email.
+- EAS projects and builds go under the Expo team account, never a personal one.
+- GitHub settings changes, deletions or bulk creation: list the steps as a, b, c and wait for an
+  explicit "yes a, b, c".
+- When a command fails, capture and show the error before retrying, and mention it in the summary.
+- Board: when a PR opens, set its issue to In review. After Rafael merges, ask him for Actual (h),
+  Review rounds and First-pass accepted, then fill them in.
+
 ## Measurement
 
 The project also evaluates the AI-assisted workflow. The GitHub Project fields are the single
